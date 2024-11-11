@@ -1,0 +1,21 @@
+{
+  "name": "playwright-android",
+  "version": "1.0.0",
+  "description": "Reproduction repository for LambdaTest Android testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "playwright test --project=\"Chrome@latest:Windows 10@lambdatest\"",
+    "test:android": "playwright test --project=\"Pixel 5@Android 11@lambdatest\"",
+    "test:debug": "playwright test --debug",
+    "tunnel": "node setupTunnel.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lambdatest/node-tunnel": "^4.0.1",
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.4.5"
+  }
+}
